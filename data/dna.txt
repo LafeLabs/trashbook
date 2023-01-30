@@ -64,6 +64,22 @@
         "user.txt"
     ],
     "scrolls": [
+        "COPYTHISBOOK",
+        "CYBERALCHEMY",
+        "EBOOK",
+        "FAQ",
+        "GEOMETRON",
+        "INTERNETOFDIRT",
+        "MAGIC",
+        "ML",
+        "SELLTHISBOOK",
+        "THEMAGICDUMP",
+        "TRASH",
+        "TRASHCARTS",
+        "TRASHMAGIC",
+        "TRASHSERVERS",
+        "TRASHSIGNS",
+        "ZAD",
         "home"
     ],
     "iconsymbols": [

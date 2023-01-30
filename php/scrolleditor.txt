@@ -414,7 +414,6 @@ body{
     cursor:pointer;
     color:blue;
     margin-bottom:0.5em;
-    color:#ff2cb4;
 }
 .data{
     display:none;
