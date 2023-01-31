@@ -44,3 +44,25 @@ php replicator.php
 sudo chmod -R 0777 *
 
 ```
+
+SCROLL SET SOURCE URL FOR GEOMETRON MAGIC:
+
+```
+https://gm.trashrobot.org/
+```
+
+SCROLL SET SOURCE SERVER FOR ALICE IN WONDERLAND(PUBLIC DOMAIN FROM [PROJECT GUTENBERG](https://www.gutenberg.org/)):
+```
+https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/aliceinwonderland/
+```
+SCROLL SET SOURCE SERVER FOR ALICE IN THROUGH THE LOOKING GLASS(PUBLIC DOMAIN FROM [PROJECT GUTENBERG](https://www.gutenberg.org/)):
+```
+https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/alicethroughthelookinglass/
+```
+
+SCROLL SET SOURCE SERVER FOR CHAOS BIBLE, A SELF-REPLICATING FREELY EVOLVING COPY OF THE KJV BIBLE FROM PROJECT GUTENBERG:
+```
+https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/chaosbible/
+```
+
+

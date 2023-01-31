@@ -9,9 +9,9 @@ IT INCLUDES HTML, MARKDOWN, JAVASCRIPT, PHP, JSON, CSS, AND GEOMETRON!
 
 IT CAN INCLUDE PYTHON AS NEEDED FOR SCIENTIFIC COMPUTING AND MACHINE LEARNING!
 
-
  
  - [editor.php](editor.php)
+ - [webeditor.html](webeditor.html)
  - [dnagenerator.php](dnagenerator.php)
  - [data/dna.txt](data/dna.txt)
  - [php/replicator.txt](php/replicator.txt)
