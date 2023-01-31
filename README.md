@@ -1,6 +1,6 @@
-# [TRASHBOOK](https://github.com/LafeLabs/trashbook)!
+# [TRASHBOOK!](https://github.com/LafeLabs/trashbook)
 
-### [LOCALHOST](http://localhost)
+### [LOCALHOST!](http://localhost)
 
 ***THE TRASHBOOK IS THE FIRST REALLY FREE EBOOK EVER!***
 
