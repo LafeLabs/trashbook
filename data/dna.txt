@@ -21,8 +21,6 @@
         "scrolldelete.html",
         "scrolleditor.html",
         "scrollset.html",
-        "set.html",
-        "textconvert.html",
         "trashmagic.html",
         "trashrobot.html",
         "webdestroyer.html",
@@ -30,9 +28,7 @@
     ],
     "data": [
         "dna.txt",
-        "pibrary.txt",
-        "scrollset.txt",
-        "set.txt"
+        "scrollset.txt"
     ],
     "php": [
         "copy.txt",

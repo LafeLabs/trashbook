@@ -51,11 +51,11 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <p>To create a music label, make a TRASHNET server using the instructions linked below to the Gihtub, and create a subdomain for the distro which points to a folder in "/var/www/html" on the server. Copy this page "index.html".  Create a symbolic link using the linux command ln to make a desktop shortcut for the label folder so that it is easy to find as you post songs to the folder.  Create signs which point to the URL for your label(choose an easy to use subdomain), and add QR codes using the links for that.</p>
 
 <pre>
-    ln -s /var/www/html/sloanslakedotart/label ~/Desktop/sloanslakelabel
+    ln -s /var/www/html/music ~/Desktop/music
 </pre>
 
-<h1>PODCAST EPISODES</h1>
-<div id = "podcast">
+<h1>SONGS</h1>
+<div id = "music">
 </div>
 
 
@@ -74,8 +74,8 @@ for(var index = 0;index < titles.length;index++){
 rainbow(document.getElementsByTagName("A"));
 
 
-//create a folder called "podcast" below this one, and put the podcast episodes in there.
-listfiles(document.getElementById("podcast"),"podcast");
+//create a folder called "music" below this one, and put the songs in there.
+listfiles(document.getElementById("music"),"music");
 
 
 </script>

@@ -101,11 +101,27 @@ mkdir zines
 ln -s /var/www/html/zines ~/Desktop/zines
 ```
 
+GO OUT AND ASK PEOPLE TO SUBMIT THEIR OWN ZINES ABOUT MAKING THINGS FROM TRASH AND PUBLISH THOSE!
+
 CREATE A TRASH MAGIC PODCAST AND PUBLISH IT TO A SERVER!
 
 ```
 cd /var/www/html
-mkdir zines 
-ln -s /var/www/html/zines ~/Desktop/zines
+mkdir podcast 
+ln -s /var/www/html/podcast ~/Desktop/podcast
 ```
+
+CREATE A TRASH MAGIC MUSIC LABEL AND PUBLISH IT TO A SERVER!
+
+RECORD SONGS ABOUT REPLICATING THINGS FROM TRASH AND RELEASE THEM INTO THE PUBLIC DOMAIN!
+
+
+```
+cd /var/www/html
+mkdir music
+ln -s /var/www/html/music ~/Desktop/music
+```
+
+
+
 

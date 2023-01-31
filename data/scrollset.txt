@@ -17,6 +17,7 @@
         "TRASHMAGIC",
         "TRASHSERVERS",
         "TRASHSIGNS",
+        "UNIVERSITYOFTRASH",
         "ZAD",
         "home"
     ]
