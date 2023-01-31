@@ -36,6 +36,7 @@
             });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
         </script>
 
+    
 </head>
 <body>    
 
@@ -189,6 +190,7 @@ function loadscroll(scrollname){
             document.getElementById("scrollscroll").innerHTML = rawhtml;
             convertscrollinks();
             MathJax.Hub.Typeset();//tell Mathjax to update the math
+    //			MathJax.Hub.Typeset();//tell Mathjax to update the math
         }
     };
     httpc666.open("GET", "fileloader.php?filename=" + scrollname, true);
@@ -251,13 +253,13 @@ modeswitch();
 function modeswitch(){
     if(mode == "dark"){
         mode = "light";
-        document.body.style.backgroundColor = "white";
-        document.getElementById("scrollscroll").style.backgroundColor = "#f0f0f0";
+        document.body.style.backgroundColor = "#9f8767";
+        document.getElementById("scrollscroll").style.backgroundColor = "#9f8767";
         document.getElementById("scrollscroll").style.color = "black";
 
         document.getElementById("scrollinput").style.color = "black";
-        document.getElementById("scrollinput").style.backgroundColor = "white";       
-        document.getElementById("scrollsbox").style.backgroundColor = "white";
+        document.getElementById("scrollinput").style.backgroundColor = "#9f8767";       
+        document.getElementById("scrollsbox").style.backgroundColor = "#9f8767";
         document.getElementById("scrollsbox").style.color = "black";        
     }
     else{
@@ -375,7 +377,8 @@ pre{
 }
 body{
     overflow:hidden;
-    background-color:black
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
 }
 input{
     display:block;
@@ -383,22 +386,22 @@ input{
     width:90%;
     font-family:courier;
     font-size:1.2em;
-    background-color:white;
+    background-color:#9f8767;
     color:black;
-    border-color:#ff2cb4;
+    border-color:blue;
     border-width:8px;
 }
 .boxlink{
     padding-left:1em;
     cursor:pointer;
-    color:#ff2cb4;
+    color:blue;
 }
 .boxlink:hover{
     background-color:#808080;
 }
 
 .scrolllink{
-    color:#ff2cb4;
+    color:blue;
     cursor:pointer;
 }
 .scrolllink:hover{
@@ -416,7 +419,7 @@ input{
     font-size:2em;
 }
 #scrollscroll a{
-    color:#ff2cb4;
+    color:blue;
 }
 #scrollscroll img{
     max-width:80%;
@@ -441,7 +444,7 @@ h1,h2,h3,h4{
 }
 #scrollsbox{
     position:absolute;
-    background-color:#808080;
+    background-color:#9f8767;
     color:black;
     overflow:scroll;
 }
