@@ -79,7 +79,8 @@
         "TRASHSIGNS",
         "UNIVERSITYOFTRASH",
         "ZAD",
-        "home"
+        "home",
+        "trashrobot"
     ],
     "iconsymbols": [
         "chaos.svg",

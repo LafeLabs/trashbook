@@ -55,9 +55,9 @@
     
     foreach($dna->scrolls as $value){
         
-//        if($value == "home"){
+        if($value == "home"){
             copy($baseurl."scrolls/".$value,"scrolls/".$value);
-  //      }
+        }
     
         
     }

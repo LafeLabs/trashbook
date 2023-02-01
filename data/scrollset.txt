@@ -20,6 +20,7 @@
         "TRASHSIGNS",
         "UNIVERSITYOFTRASH",
         "ZAD",
-        "home"
+        "home",
+        "trashrobot"
     ]
 }
