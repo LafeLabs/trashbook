@@ -22,6 +22,7 @@
         "UNIVERSITYOFTRASH",
         "ZAD",
         "home",
+        "srs",
         "trashrobot"
     ]
 }
