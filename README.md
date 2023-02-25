@@ -1,9 +1,15 @@
 # [TRASHBOOK LIVE INSTANCE!](https://trashbook.trashrobot.org)
 
+### [WWW.SLOANSLAKE.ART](https://www.sloanslake.art)
+
+### [WWW.SOUTHBROADWAY.NET](https://www.southbroadway.net)
+
 ### [LOCALHOST!](http://localhost)
 
 
 ***THE TRASHBOOK IS THE FIRST REALLY FREE EBOOK EVER!***
+
+### [WWW.TRASHROBOT.ORG](https://www.trashrobot.org)
 
 NOTHING ON THE CLOUD IS FREE!
 
