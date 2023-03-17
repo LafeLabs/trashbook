@@ -1,0 +1,7 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashmagicmedia/main/",
+    "symbols": [
+        "controller.svg",
+        "symbol1669265051.svg"
+    ]
+}

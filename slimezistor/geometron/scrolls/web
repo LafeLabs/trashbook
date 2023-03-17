@@ -1,0 +1,18 @@
+## [MAGIC BOOK](scrolls/magicbook)
+
+## [HOME](scrolls/home)    
+    
+# WEB
+ 
+ - [www.trashrobot.org](https://www.trashrobot.org)
+ - [www.maplelawn.net](https://www.maplelawn.net)
+ - [www.us29.xyz](https://www.us29.xyz)
+
+To create a web page with the GEOMETRON/TRASHROBOT system on it, get a web host set up and create a new file in the web directory called replicator.php and copy the code from an existing replicator into that, for example:
+
+ - [www.trashrobot.org/php/replicator.txt](https://www.trashrobot.org/php/replicator.txt)
+ - [php/replicator.txt](php/replicator.txt)
+
+Then point your browser to [your web address]/replicator.php and wait for the page to load with a link to click on, and click through the link. Then you can copy scroll sets using the scroll set replicator as described in [MAGIC BOOK](scrolls/magicbook).
+
+## [STREETS](scrolls/streets)

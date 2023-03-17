@@ -1,5 +1,5 @@
 {
-    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/",
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/slimezistor/",
     "scrolls": [
         "home"
     ]

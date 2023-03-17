@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+
+       <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC</title>    
+   <script src = "jscode/trashmagic.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>   
+</head>
+<body>    
+<div id = "mainscroll">
+    
+
+</div>
+<script>
+
+//googleyeyes(8);
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+
+scroll = "";
+rawhtml = "";
+var converter = new showdown.Converter();
+// for more on options see here:
+// https://github.com/showdownjs/showdown/wiki/Showdown-Options
+converter.setOption('literalMidWordUnderscores', 'true');
+converter.setOption('tables', 'true')
+    
+filename = "scrolls/home";
+
+loadscroll("scrolls/home");
+
+
+function loadscroll(scrollname){
+    filename = scrollname;
+    document.getElementById("mainscroll").innerHTML = "";
+    var httpc666 = new XMLHttpRequest();
+    httpc666.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            scroll = this.responseText;
+            rawhtml = converter.makeHtml(scroll);
+            document.getElementById("mainscroll").innerHTML = rawhtml;
+            convertscrollinks();
+            //			MathJax.Hub.Typeset();//tell Mathjax to update the math
+    //			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        }
+    };
+    httpc666.open("GET", "fileloader.php?filename=" + scrollname, true);
+    httpc666.send();
+    //MathJax.Hub.Typeset();//tell Mathjax to update the math
+}
+
+
+function convertscrollinks(){
+    links = document.getElementById("mainscroll").getElementsByTagName("A");
+    for(var index = 0;index < links.length;index++){
+        if(links[index].href.includes("scrolls/") && !links[index].href.includes(".php")){
+            //console.log(links[index].href);
+            var newspan = document.createElement("SPAN");
+            newspan.innerHTML = links[index].innerHTML;
+            var dataspan = document.createElement("SPAN");
+            dataspan.className = "data";
+            dataspan.innerHTML  = "scrolls/" + links[index].href.split("scrolls/")[1];
+            newspan.appendChild(dataspan);
+            newspan.className = "scrolllink";
+            links[index].parentNode.insertBefore(newspan,links[index]);
+            links[index].style.display = "none";
+            
+            newspan.onclick = function(){
+                var localscroll = this.getElementsByClassName("data")[0].innerHTML;
+                loadscroll(localscroll);
+            }
+        }
+        if(links[index].href.includes("scroll(") && !links[index].href.includes(".php")){
+            //link format scroll(any url)
+            //console.log(links[index].href);
+            var newspan = document.createElement("SPAN");
+            newspan.innerHTML = links[index].innerHTML;
+            var dataspan = document.createElement("SPAN");
+            dataspan.className = "data";
+            dataspan.innerHTML  = links[index].href.split("scroll(")[1].split(")")[0];
+            newspan.appendChild(dataspan);
+            newspan.className = "scrolllink";
+            links[index].parentNode.insertBefore(newspan,links[index]);
+            links[index].style.display = "none";
+            
+            newspan.onclick = function(){
+                var localscroll = this.getElementsByClassName("data")[0].innerHTML;
+                loadscroll(localscroll);
+            }
+        }
+    }
+}
+
+</script>
+<style>
+body{
+    background-color:black;
+}
+#mainscroll{
+    position:absolute;
+    left:1em;
+    top:1em;
+    right:1em;
+    bottom:1em;
+    border-radius:1em;
+    border:solid;
+    border-width:10px;
+    border-color:white;
+    overflow-x:scroll;
+    text-align:justify;
+    font-family:courier;    
+    padding-left:1em;
+    padding-right:1em;
+    position:absolute;
+    background-color:black;
+    color:#00ff00;
+    font-size:2em;
+    background-color:#0000ff;
+    color:white;
+}
+#mainscroll a{
+    color:#ff2cb4;
+}
+#mainscroll img{
+    max-width:80%;
+    display:block;
+    margin:auto;
+    background-color:white;
+}
+
+
+
+pre{
+  overflow:scroll;
+}
+
+.scrolllink{
+    color:#ff2cb4;
+    cursor:pointer;
+}
+.scrolllink:hover{
+    background-color:#ff2cb490;
+}
+
+
+.data{
+    display:none;
+}
+h1,h2,h3,h4{
+    text-align:center;
+}
+.button{
+    cursor:pointer;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+
+
+
+</style>
+</body>
+</html>
+
+
