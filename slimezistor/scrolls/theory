@@ -3,4 +3,9 @@
 
 # theory
  
+A capacitor is charged and discharged through the slime which the probes are connected to.  The rate of charging of the capacitor is set by the impedance of the slime.  Dynamic slime causes dynamic charging which changes the shape of the waveform.  In the case of a linear resistor, the charge on the capacitor is a rounded sawtooth wave with exponential charge and discharge with characteristic time in seconds of RC where R is the resistance of the slime in ohms and C is the capacitance of the Slime Capacitor in farads.
+
 ![](https://raw.githubusercontent.com/LafeLabs/trashotron/main/trashmagic/slimezistor-schematic-bottomsquare.png) 
+
+![](https://raw.githubusercontent.com/LafeLabs/trashbook/61809bbd0335f99f8af27b381a97b952e8c42931/slimezistor/trashmagic/schematic1.svg)
+
