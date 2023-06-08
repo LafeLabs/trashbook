@@ -1,0 +1,6 @@
+{
+    "server": "https://gm.trashrobot.org/",
+    "scrolls": [
+        "home"
+    ]
+}

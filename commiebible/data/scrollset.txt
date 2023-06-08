@@ -1,0 +1,6 @@
+{
+    "server": "https://trashrobot.org/commiebible/",
+    "scrolls": [
+        "home"
+    ]
+}

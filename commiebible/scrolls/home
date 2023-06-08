@@ -1,0 +1,83 @@
+## [Back to library](../) 
+
+# King James Bible
+
+copy/pasted from [Project Gutenberg](https://www.gutenberg.org/ebooks/10).
+
+Scroll server(enter in [scroll set replicator](scrollset.html)): 
+
+https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/chaosbible
+
+Chaos bible is a living document. Edit at will.  Delete what you don't want, including whole books.  Add commentary.  Add other langauges.  add hyperlinks. ad manifestos.  each version starts with the copy from gutenberg, but then they evolve in the wild according to the laws of geometron.  A Raspberry Pi can host a living document.
+
+### Old Testament
+
+ - [Genesis](scrolls/genesis)
+ - [Exodus](scrolls/exodus)
+ - [Leviticus](scrolls/leviticus)
+ - [Numbers](scrolls/numbers)
+ - [Deuteronomy](scrolls/deuteronomy)
+ - [The Book of Joshua](scrolls/joshua)
+ - [The Book of Judges](scrolls/judges)
+ - [The Book of Ruth](scrolls/ruth)
+ - [The First Book of Samuel](scrolls/firstsamuel)
+ - [The Second Book of Samuel](scrolls/secondsamuel)
+ - [The First Book of the Kings](scrolls/firstkings)
+ - [The Second Book of the Kings](scrolls/secondkings)
+ - [The First Book of the Chronicles](scrolls/firstchronicles)
+ - [The Second Book of the Chronicles](scrolls/secondchronicles)
+ - [Ezra](scrolls/ezra)
+ - [The Book of Nehemiah](scrolls/Nehemiah)
+ - [The Book of Esther](scrolls/esther)
+ - [The Book of Job](scrolls/job)
+ - [The Book of Psalms](scrolls/psalms)
+ - [The Proverbs](scrolls/proverbs)
+ - [Ecclesiastes](scrolls/ecclesiastes)
+ - [The Song of Solomon](scrolls/songofsolomon)
+ - [The Book of the Prophet Isaiah](scrolls/isaiah)
+ - [The Book of the Prophet Jeremiah](scrolls/jeremiah)
+ - [The Lamentations of Jeremiah](scrolls/lamentaionsjeremiah)
+ - [The Book of the Prophet Ezekiel](scrolls/ezekiel)
+ - [The Book of Daniel](scrolls/daniel)
+ - [Hosea](scrolls/hosea)
+ - [Joel](scrolls/joel)
+ - [Amos](scrolls/amos)
+ - [Obadiah](scrolls/Obadiah)
+ - [Jonah](scrolls/jonah)
+ - [Micah](scrolls/micah)
+ - [Nahum](scrolls/nahum)
+ - [Habakkuk](scrolls/habakkuk)
+ - [Zephaniah](scrolls/zephaniah)
+ - [Haggai](scrolls/haggai)
+ - [Zechariah](scrolls/zechariah)
+ - [Malachi](scrolls/malachi)
+
+### New Testament
+
+ - [The Gospel According to Saint Matthew](scrolls/matthew)
+ - [The Gospel According to Saint Mark](scrolls/mark)
+ - [The Gospel According to Saint Luke](scrolls/luke)
+ - [The Gospel According to Saint John](scrolls/john)
+ - [The Acts of the Apostles](scrolls/acts)
+ - [The Epistle of Paul the Apostle to the Romans](scrolls/romans)
+ - [The First Epistle of Paul the Apostle to the Corinthians](scrolls/firstcorinthians)
+ - [The Second Epistle of Paul the Apostle to the Corinthians](scrolls/secondcorinthians)
+ - [The Epistle of Paul the Apostle to the Galatians](scrolls/galatians)
+ - [The Epistle of Paul the Apostle to the Ephesians](scrolls/ephesians)
+ - [The Epistle of Paul the Apostle to the Philippians](scrolls/philippians)
+ - [The Epistle of Paul the Apostle to the Colossians](scrolls/colossians)
+ - [The First Epistle of Paul the Apostle to the Thessalonians](scrolls/firstthessalonians)
+ - [The Second Epistle of Paul the Apostle to the Thessalonians](scrolls/secondthessalonians)
+ - [The First Epistle of Paul the Apostle to Timothy](scrolls/firsttimothy)
+ - [The Second Epistle of Paul the Apostle to Timothy](scrolls/secondtimothy)
+ - [The Epistle of Paul the Apostle to Titus](scrolls/titus)
+ - [The Epistle of Paul the Apostle to Philemon](scrolls/philemon)
+ - [The Epistle of Paul the Apostle to the Hebrews](scrolls/hebrews)
+ - [The General Epistle of James](scrolls/james)
+ - [The First Epistle General of Peter](scrolls/firstpeter)
+ - [The Second General Epistle of Peter](scrolls/secondpeter)
+ - [The First Epistle General of John](scrolls/firstgeneraljohn)
+ - [The Second Epistle General of John](scrolls/secondgeneraljohn)
+ - [The Third Epistle General of John](scrolls/thirdgeneraljohn)
+ - [The General Epistle of Jude](scrolls/jude)
+ - [The Revelation of Saint John the Divine](scrolls/revelations)
