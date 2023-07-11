@@ -1,0 +1,15 @@
+{
+    "server": "https://www.southplatte.net/FREEWEBSERVERS/",
+    "scrolls": [
+        "BULK-TRASH",
+        "CHROMEBOOKS",
+        "CREATORS",
+        "DISTRIBUTORS",
+        "DONATED-LAPTOPS",
+        "EBAY",
+        "INSTALLERS",
+        "SOURCING",
+        "SPONSORS",
+        "home"
+    ]
+}

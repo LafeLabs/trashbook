@@ -1,0 +1,25 @@
+{
+    "server": "https://www.usroute1.xyz/STREETBOOK/",
+    "scrolls": [
+        "BUSINESSDIRECTORY",
+        "CARTS",
+        "COMMERCEBOARD",
+        "CYBERBIKE",
+        "DOWNSTREAM",
+        "EBOOKS",
+        "FREESTORE",
+        "HYPERSIGN",
+        "MAGICDUMP",
+        "MIXTAPES",
+        "MUTUALAID",
+        "NICONET",
+        "OPERATORS",
+        "PODCASTS",
+        "ROUTES",
+        "SPONSORS",
+        "STREET",
+        "WATERSHED",
+        "ZINES",
+        "home"
+    ]
+}
