@@ -1,7 +1,19 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/revolutions/",
     "scrolls": [
+        "dump",
+        "food",
         "home",
-        "networks"
+        "manufacturing",
+        "media",
+        "mushrooms",
+        "networks",
+        "niconet",
+        "soil",
+        "street",
+        "trashcarts",
+        "trashrobot",
+        "watershed",
+        "webservers"
     ]
 }
