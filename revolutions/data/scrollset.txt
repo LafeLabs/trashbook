@@ -1,0 +1,7 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/revolutions/",
+    "scrolls": [
+        "home",
+        "networks"
+    ]
+}
