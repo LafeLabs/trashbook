@@ -1,0 +1,31 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/",
+    "scrolls": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "IX",
+        "V",
+        "VI",
+        "VII",
+        "VIII",
+        "X",
+        "XI",
+        "XII",
+        "XIII",
+        "XIV",
+        "XIX",
+        "XV",
+        "XVI",
+        "XVII",
+        "XVIII",
+        "XX",
+        "XXI",
+        "XXII",
+        "XXIII",
+        "XXIV",
+        "home",
+        "introduction"
+    ]
+}
