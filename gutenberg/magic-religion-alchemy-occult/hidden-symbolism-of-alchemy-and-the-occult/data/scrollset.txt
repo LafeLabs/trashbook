@@ -1,0 +1,23 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/gutenberg/magic-religion-alchemy-occult/hidden-symbolism-of-alchemy-and-the-occult/",
+    "scrolls": [
+        "I-I",
+        "I-II",
+        "II-I",
+        "II-II",
+        "II-III",
+        "II-IV",
+        "II-V",
+        "III-I-A",
+        "III-I-B",
+        "III-I-C",
+        "III-II",
+        "III-III",
+        "bibliography",
+        "footnotes",
+        "home",
+        "index",
+        "notes",
+        "preface"
+    ]
+}
