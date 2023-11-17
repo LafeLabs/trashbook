@@ -1,90 +1,90 @@
 [
     {
-        "title": "title",
+        "title": "TRASHDECK",
+        "square": "<UL>\n<LI>EACH ELEMENT IS A SQUARE</LI>\n<li>EACH ELEMENT REPLICATES</li>\n</UL>\n"
+    },
+    {
+        "title": "SQUARE",
+        "square": "one"
+    },
+    {
+        "title": "AS ABOVE SO BELOW",
+        "square": "square two\n"
+    },
+    {
+        "title": "LAW OF TRASH",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "TRASH MAGICIANS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "TRASH MAGIC SERVERS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "LARP STACK",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE FOOD",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE TOILETS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE SHELTER",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE MEDICINE",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE CLOTHES",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE POWER",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE RIDES",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE DELIVERY",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE CARTS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE FUEL",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "TRASH BUS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE DATA",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE BOOKS",
         "square": "square"
     },
     {
-        "title": "title",
+        "title": "FREE ADS",
         "square": "square"
     },
     {
-        "title": "title",
-        "square": "square"
-    },
-    {
-        "title": "title",
-        "square": "square"
-    },
-    {
-        "title": "title",
-        "square": "square"
-    },
-    {
-        "title": "title",
+        "title": "FREE MUSIC",
         "square": "square"
     }
 ]

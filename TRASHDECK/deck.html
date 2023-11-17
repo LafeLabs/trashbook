@@ -10,8 +10,11 @@
 
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<!--
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
+-->
 
 <!--       un comment to use math
 
@@ -64,6 +67,22 @@
 <div id = "qrcode"></div>
 
 <script>
+
+
+squaresize = 100;
+margin = 100;
+if(innerWidth > innerHeight){
+    squaresize = innerHeight - 200;
+    margin = (innerWidth - innerHeight)/2;
+    document.getElementById("square").style.top = "150px";
+    document.getElementById("square").style.left = (margin + 100).toString() + "px";
+    document.getElementById("square").style.width = squaresize.toString() + "px";
+    document.getElementById("square").style.height = squaresize.toString() + "px";
+    
+    document.getElementById("scroll").style.top = "150px";
+    document.getElementById("scroll").style.width = (margin).toString() + "px";
+}
+
 //load deck
 deck = [];
 deckindex = 0;
@@ -73,16 +92,27 @@ httpc.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
         deck = JSON.parse(this.responseText);
         document.getElementById("squarecode").value = deck[deckindex].square;
+        document.getElementById("title").innerHTML = deck[deckindex].title;
         document.getElementById("titleinput").value = deck[deckindex].title;
         document.getElementById("square").innerHTML = deck[deckindex].square;
+        squares = [];
         for(var index = 0;index < deck.length;index++){
             var newdiv = document.createElement("DIV");
+            newdiv.className = "subsquare";
             newdiv.innerHTML = index.toString() + ":" + deck[index].title;
             newdiv.id = "title" + index.toString();
             document.getElementById("scroll").appendChild(newdiv);
             newdiv.onclick = function(){
                 
+                deckindex = parseInt(this.id.substring(5));
+                document.getElementById("squarecode").value = deck[deckindex].square;
+                document.getElementById("titleinput").value = deck[deckindex].title;
+                document.getElementById("square").innerHTML = deck[deckindex].square;
+                document.getElementById("title").innerHTML = deck[deckindex].title;
+                document.getElementById("indexinput").value = deckindex.toString();
+
             }
+            squares.push(newdiv);
         }
     }
 };
@@ -111,13 +141,96 @@ function savedeck(){
 
 }
 
+document.getElementById("squarecode").onkeyup = function() {
+    deck[deckindex].square = this.value;
+    document.getElementById("square").innerHTML = this.value;
+    savedeck();
+}
+
+document.getElementById("titleinput").onchange = function(){
+    document.getElementById("title").innerHTML = this.value;
+    deck[deckindex].title = this.value;
+    squares[deckindex].innerHTML = deckindex.toString()  + ":" + this.value;
+    savedeck();
+}
+document.getElementById("indexinput").value = deckindex.toString();
+document.getElementById("indexinput").onchange = function(){
+    deckindex = parseInt(this.value);
+    document.getElementById("indexinput").value = deckindex.toString();
+
+    document.getElementById("squarecode").value = deck[deckindex].square;
+    document.getElementById("titleinput").value = deck[deckindex].title;
+    document.getElementById("square").innerHTML = deck[deckindex].square;   
+}
+
+
+document.getElementById("prevbutton").onclick  = function(){
+    deckindex--;
+    if(deckindex < 0){
+        deckindex = deck.length -1;
+    }
+    document.getElementById("squarecode").value = deck[deckindex].square;
+    document.getElementById("titleinput").value = deck[deckindex].title;
+    document.getElementById("title").innerHTML = deck[deckindex].title;
+    document.getElementById("square").innerHTML = deck[deckindex].square;
+    document.getElementById("indexinput").value = deckindex.toString();
+
+}
+document.getElementById("nextbutton").onclick  = function(){
+    deckindex++;
+    if(deckindex > deck.length - 1){
+        deckindex = 0;
+    }
+    document.getElementById("squarecode").value = deck[deckindex].square;
+    document.getElementById("titleinput").value = deck[deckindex].title;
+    document.getElementById("square").innerHTML = deck[deckindex].square;
+    document.getElementById("title").innerHTML = deck[deckindex].title;
+    document.getElementById("indexinput").value = deckindex.toString();
+
+}
+
+codesquaresize = 100;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
 </script>
 <style>
-#title{
-    position:absolute;
+body{
+    overflow:hidden;
+    font-family:Arial;
 }
 #square{
     position:absolute;
+    border:solid;
+    border-width:0.5px;
+}
+#squarecode{
+    width:90%;
+    height:20em;
+    font-family:courier;
+    color:#00ff00;
+    background-color:black;
+    font-size:14px;
+}
+#title{
+    position:absolute;
+    text-align:center;
+    width:100%;
+    z-index:-1;
+    top:-20px;
+    font-size:50px;
+    left:0px;
 }
 #prevbutton{
     position:absolute;
@@ -137,6 +250,19 @@ function savedeck(){
     position:absolute;
     right:0px;
     bottom:0px;
+    overflow:scroll;
+}
+#qrcode{
+    position:absolute;
+    left:10px;
+    bottom:10px;
+    border:solid;
+    border-color:white;
+    border-width:10px;
+}
+.subsquare{
+    cursor:pointer;
+    margin-bottom:0.25em;
 }
 </style>
 </body>
