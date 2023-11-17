@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <!--
-    DECK
+     DECK OF TRASH MAGIC SQUARES
     -->
 
 
@@ -74,7 +74,16 @@ httpc.onreadystatechange = function(){
         deck = JSON.parse(this.responseText);
         document.getElementById("squarecode").value = deck[deckindex].square;
         document.getElementById("titleinput").value = deck[deckindex].title;
-        
+        document.getElementById("square").innerHTML = deck[deckindex].square;
+        for(var index = 0;index < deck.length;index++){
+            var newdiv = document.createElement("DIV");
+            newdiv.innerHTML = index.toString() + ":" + deck[index].title;
+            newdiv.id = "title" + index.toString();
+            document.getElementById("scroll").appendChild(newdiv);
+            newdiv.onclick = function(){
+                
+            }
+        }
     }
 };
 httpc.open("GET", "fileloader.php?filename=deck.txt", true);
