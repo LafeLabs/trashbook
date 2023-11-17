@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!--
+DECK
+    -->
+
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<!--       un comment to use math
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+                }
+            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        </script>
+    -->
+
+    
+</head>
+<body>    
+
+<img id = "prevbutton" src = "https://raw.githubusercontent.com/LafeLabs/squares/main/trashmagic/left-arrow.svg"/>    
+<img id = "nextbutton" src = "https://raw.githubusercontent.com/LafeLabs/squares/main/trashmagic/right-arrow.svg"/>    
+    
+<h1 id = "title"></h1>
+
+<div id = "square"></div>
+
+<div id = "scroll">
+    
+    <table>
+        <tr>
+            <td>SQUARE TITLE:</td>
+            <td>
+                <input id = "titleinput"/>
+            </td>
+        </tr>
+        <tr>
+            <td>SQUARE INDEX</td>
+            <td>
+                <input id = "indexinput"/>
+            </td>
+        </tr>
+    </table>
+    <h2>HTML CODE:</h2>
+    <textarea id = "squarecode"></textarea>
+    
+</div>
+
+
+<div id = "qrcode"></div>
+
+<script>
+//load deck
+deck = [];
+squareindex = 0;
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+        deck = JSON.parse(this.responseText);
+        
+    }
+};
+httpc.open("GET", "fileloader.php?filename=deck.txt", true);
+httpc.send();
+
+
+function savedeck(){
+    var url = "filesaver.php";        
+    var httpc = new XMLHttpRequest();
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(JSON.stringify(deck,null,"    "))+"&filename=deck.txt");//send text to filesaver.php
+
+}
+
+</script>
+<style>
+#title{
+    position:absolute;
+}
+#square{
+    position:absolute;
+}
+#prevbutton{
+    position:absolute;
+    cursor:pointer;
+    width:100px;
+    left:0px;
+    top:0px;
+}
+#nextbutton{
+    position:absolute;
+    cursor:pointer;
+    width:100px;
+    right:0px;
+    top:0px;
+}
+#scroll{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/",
+    "scrolls": [
+        "ASABOVESOBELOW",
+        "FREEADS",
+        "FREEBOOKS",
+        "FREECARTS",
+        "FREECLOTHES",
+        "FREEDATA",
+        "FREEDELIVERY",
+        "FREEFOOD",
+        "FREEFUEL",
+        "FREEMEDICINE",
+        "FREEMUSIC",
+        "FREEPOWER",
+        "FREERIDES",
+        "FREESHELTER",
+        "FREETOILETS",
+        "LARPSTACK",
+        "LAWOFTRASH",
+        "SQUARE",
+        "TRASHBUS",
+        "TRASHDECK",
+        "TRASHMAGICIANS",
+        "TRASHMAGICSERVERS",
+        "home"
+    ]
+}
