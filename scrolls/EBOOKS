@@ -7,11 +7,11 @@ THIS RIGHT HERE DOCUMENT THAT YOU ARE READING IS A FREE EBOOK! IT IS SELF-REPLIC
 
 THIS DOCUMENT IS A SELF REPLICATING SET OF FILES MADE FROM THE FIVE LANGUAGES OF 
 
- - [HTML](https://en.wikipedia.org/wiki/HTML)
- - [CSS](https://en.wikipedia.org/wiki/CSS)
- - [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
- - [PHP](https://en.wikipedia.org/wiki/PHP)
- - [MARKDOWN ](https://en.wikipedia.org/wiki/Markdown)
+ - [HTML](scrolls/HTML)
+ - [CSS](scrolls/CSS)
+ - [JAVASCRIPT](scrolls/JAVASCRIPT)
+ - [PHP](scrolls/PHP)
+ - [MARKDOWN ](scrolls/MARKDOWN)
 
 A [PHP SCRIPT](php/replicator.txt) REPLICATES THE SET, AND A [JSON FILE](data/dna.txt) DESCRIBES THE SET.
 
