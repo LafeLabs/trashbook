@@ -1,6 +1,6 @@
     <?php
 
-    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/trashbook/main/data/dna.txt";
+    $dnaurl = "https://trashrobot.net/TRASHBOOK/data/dna.txt";
     
     if(isset($_GET["dna"])){
         $dnaurl = $_GET["dna"];
@@ -17,7 +17,7 @@
     mkdir("iconsymbols");
     
 
-    copy("https://raw.githubusercontent.com/LafeLabs/trashbook/main/php/replicator.txt","replicator.php");
+    copy("https://www.w3schools.com/html/","replicator.php");
     
     
     

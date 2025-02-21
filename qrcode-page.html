@@ -15,7 +15,7 @@
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>    
-
+<div id = "mushroom" style = "font-size:10em;cursor:pointer;">🍄CLICK ME🍄</div>
 <a id= "toplink" href = "index.html">HOME</a>
 
 <table>
@@ -29,18 +29,27 @@
         <td><input id = "textinput"/></td>
     </tr>
 </table>
-<a id = "linklink"></a>
-<div id = "qrcode"></div>
+<a style = "display:none" id = "linklink"></a>
+<div style = "display:none" id = "qrcode"></div>
 <table id = "pagetable"></table>
 <script>
 
-codesquaresize = 80;
+codesquaresize = 120;
 marginsize = 40;
 fontsize = 12;
 
 //globalurl = "http://www.trashrobot.org/qrcode.html";
-globalurl = window.location.href.split("qrcode.html")[0];
-urltext = globalurl;
+globalurl = window.location.href.split("qrcode-page.html")[0];
+//globalurl = "https://www.southplatte.net";
+//urltext = globalurl;
+capsurl = globalurl.toUpperCase();
+capsurl = capsurl.replace("HTTPS://","");
+capsurl = capsurl.replace("HTTP://","");
+capsurl = capsurl.replace(/\//g,"/<BR/>");
+
+//console.log(capsurl);
+//urltext = "TRASH MAGIC<BR>HYPERSIGN<BR>SOUTHPLATTE.NET";
+urltext = "TRASH MAGIC<BR>"  + capsurl;
 
 document.getElementById("urlinput").value = "";
 document.getElementById("textinput").value = "";
@@ -79,10 +88,16 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 pngcode = document.getElementById("qrcode").getElementsByTagName("IMG")[0].src;
 qrcode.makeCode(globalurl);
 
+document.getElementById("mushroom").onclick = function(){
+    this.style.display = "none";
+    loadtable();
+}
+
 
 document.getElementById("reloadbutton").onclick  =function(){
     loadtable();
 }
+    
 
 function loadtable(){
     globalurl = document.getElementById("urlinput").value;
@@ -99,7 +114,7 @@ function loadtable(){
             var newtd = document.createElement("TD");
             newtr.appendChild(newtd);
             var newimg = document.createElement("img");
-            newimg.style.width = "80px";
+            newimg.style.width = "120px";
             newimg.src = pngcode;
             newtd.appendChild(newimg);
         }
@@ -120,7 +135,7 @@ input{
     border:solid;
 }
 body{
-    font-family:courier;
+    font-family:Comic Sans MS;
 }
 canvas,img{
 }
@@ -130,8 +145,15 @@ canvas,img{
     top:0px;
     font-size:2em;
 }
+a{
+    font-family:Comic Sans MS;
+    color:#ff2cb4;
+
+}
 .urltext{
-    font-size:8px;
+    font-size:12px;
+    font-family:Comic Sans MS;
+
 }
 .button{
     cursor:pointer;
